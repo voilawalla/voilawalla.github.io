@@ -190,3 +190,7 @@ footer p {
     clear: both;
   }
 }
+
+#resume {
+  margin: auto;
+}
