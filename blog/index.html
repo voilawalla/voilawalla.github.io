@@ -2,60 +2,29 @@
 layout: default
 title: Nicole Carpenter - Blog
 ---
-<ul class="posts">
-
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
 <div class="row">
   <div class="box">
     <div class="col-lg-12">
-        <hr>
-        <h2 class="intro-text text-center">Personal
-            <strong>blog</strong>
-        </h2>
-        <hr>
+      <hr>
+      <h2 class="intro-text text-center">Personal
+          <strong>blog</strong>
+      </h2>
+      <hr>
     </div>
     <div class="col-lg-12 text-center">
       <img class="img-responsive img-border img-full" src="/images/DeathtoStock_Wired3.jpg" alt="">
-      <h2>Looking for developer jobs on Christmas
-        <br>
-        <small>December 25, 2015</small>
-      </h2>
-      <p>I am a developer. Or I am an eventual developer. I am potentially a developer.</p>
-      <a href="#" class="btn btn-default btn-lg">Read More</a>
-      <hr>
-    </div>
-    <div class="col-lg-12 text-center">
-      <img class="img-responsive img-border img-full" src="/images/DeathtoStock_Wired4.jpg" alt="">
-      <h2>My last forseeable day as a "student"
-        <br>
-        <small>November 12, 2015</small>
-      </h2>
-      <p>Tomorrow marks the last day of career week here at Dev Bootcamp. 5pm is the last time I can call myself a student, at least in the traditional sense. Come to think of it, Dev Bootcamp isn't exactly traditional education. Revision: tomorrow marks the last day of my guided education.</p>
-      <p>I have basically been a student my entire life through this point. I started age 5 in kindergarten and lived and studied in the same school district through high school. I finished my senior year six months before my peers, and while the rest of my classmates were attending our Wallenpaupack Class of 2005 High School Graduation, I was in an 8 x 11 foot classroom learning the letters of the Arabic language. Through the end of last year, I was in college studying working towards one of my three degrees. And 2015 was the year of Ruby on Rails and Dev Bootcamp.</p>
-      <p>Yes I am a student; it's the only way I know how to be.</p>
-      <a href="#" class="btn btn-default btn-lg">Read More</a>
-      <hr>
-    </div>
-    <div class="col-lg-12 text-center">
-      <img class="img-responsive img-border img-full" src="/images/DeathtoStock_Wired6.jpg" alt="">
-      <h2>Why I code
-          <br>
-          <small>October 31, 2015</small>
-      </h2>
-      <blockquote>"Why do you want to be a developer?"</blockquote>
-      <p>This question seems to come up a lot on interviews. It is a different question from "Why do you want to work here?" because it speaks to something bigger than a job. It speaks to one's identity.</p>
-      <a href="#" class="btn btn-default btn-lg">Read More</a>
-      <hr>
-    </div>
-    <div class="col-lg-12 text-center">
-      <ul class="pager">
-        <li class="previous"><a href="#">&larr; Older</a>
-        </li>
-        <li class="next"><a href="#">Newer &rarr;</a>
-        </li>
+      <ul class="posts list-group">
+        {% for post in site.posts %}
+          <li class="list-group-item">
+            <h2>{{ post.title }}</h2>
+            <span class="tight-top"><h2><small>{{ post.date | date_to_string }}</small></h2></span>
+            <p>{{ post.content | strip_html | truncatewords:75}}</p>
+            <br>
+            <a href="{{ post.url }}">Read more...</a>
+            <br>
+            <br>
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </div>

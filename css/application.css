@@ -194,3 +194,7 @@ footer p {
 #resume {
   margin: auto;
 }
+
+.tight-top {
+  margin-top: 0;
+}
