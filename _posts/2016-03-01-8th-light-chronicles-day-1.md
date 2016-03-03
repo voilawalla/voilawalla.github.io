@@ -24,7 +24,7 @@ I got about 6 lessons into the tutorial and quickly realized that the version fo
 
 Another issue I came across was how looped behavior was outputted. Instead of being able to see the output of each iteration, a chunk of code like
 
-```
+```swift
 for index in 1...5
 {
   "This will print 5 times"
@@ -33,10 +33,14 @@ for index in 1...5
 
 yielded an output of `(5 times)` rather than
 
-```
+```swift
 This will print 5 times
 This will print 5 times
 This will print 5 times
 This will print 5 times
 This will print 5 times
 ```
+
+As far as Swift itself, the language has a lot of similarities to other languages that I have seen and worked with. I am quickly realizing that all programming languages have the same basic elements. They all have attributes and functions. Collections and "dictionaries" exist in all languages that I have seen.
+
+To be continued...
