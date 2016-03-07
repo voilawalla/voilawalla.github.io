@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Clean Code - Chapter 1"
+title: "Clean Code: Chapter 1"
 date: 2016-03-03
 ---
 
