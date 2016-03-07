@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-wide
 title: "Clean Code: Chapter 2 - Meaningful Names"
 date: 2016-03-04
 ---
