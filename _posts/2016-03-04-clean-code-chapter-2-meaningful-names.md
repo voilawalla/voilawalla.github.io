@@ -6,6 +6,8 @@ date: 2016-03-04
 
 One of the most fundamental aspects of clean, readable code has to do with creating meaningful, sustainable names throughout the code base. *Clean Code* describes several conventions with which to follow, all of which are guidelines, but consider them best practices.
 
+Meaningful names means more than just consistency and readability. Here is a highlight of the concepts covered in Chapter 2 of *Clean Code*:
+
 Convention | Description | Example
 --- | --- | ---
 Use Intention revealing names | Why does it exist? What does it do? How is it used? | *DO* `fileAgeInDays`
