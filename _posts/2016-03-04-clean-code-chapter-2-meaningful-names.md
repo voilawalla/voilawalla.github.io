@@ -9,6 +9,7 @@ One of the most fundamental aspects of clean, readable code has to do with creat
 Convention | Description | Example
 --- | --- | ---
 Use Intention revealing names | Why does it exist? What does it do? How is it used? | *DO* `fileAgeInDays`
+ | |
 Avoid disinformation | Don’t use datatypes in names. Avoid abbreviations. Variations should be noticeable. Avoid characters like lower case l and upper case O. | *DON’T* `c`, `l()`, `printWarehouseInfo` and `printWarehousesInfo`
 Make meaningful distinctions | Don’t name with number series. Avoid noise words like a, an, the. Naming the object in the name is redundant. | *DON’T* `StudentArray1`, `productData` and `productInfo`
 Use pronounceable names | Names should make verbal sense. | *DON’T* `prymdhms` (print date method)
