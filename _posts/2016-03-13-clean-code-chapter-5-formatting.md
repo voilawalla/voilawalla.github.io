@@ -12,6 +12,8 @@ This applies to programming because a consistently and cleanly formatted applica
 
 There are several aspects that go into a well formatted application. Vertical and horizontal formatting are a couple of considerations to make when considering how your code and files should be organized.
 
+###Vertical Formatting
+
 >Smaller files are usually easier to understand than large files are. 
 
 Vertical formatting points to a file’s overall size with regards to lines of code per file. As a general rule, you don’t want to have files over 500 lines of code, but even smaller files are easier to sort through. 
@@ -22,16 +24,24 @@ With the code organized, you can make other considerations with regards to spaci
 
 It is appropriate to use empty lines to separate concepts, such as functions. Within a grouped concept, however, using empty lines can draw out methods, making them more difficult to follow. 
 
+###Horizontal Formatting
+
 Horizontal formatting, on the other hand, deals with the smaller context of single lines. The guideline for how long your lines should be should take into consideration a reader and the required movement it would take to read from left to right. You don’t want the reader to have to scroll to read a full line, nor would you want to have to shrink the font to a tiny size to get a single line effect. Typically 100-120 characters per line are appropriate. 
 
+> We use horizontal white space to associate things that are strongly related and dissassociate things that are more weakly related.
+
 Spacing can have a positive effect on the readability of the code. Consider the following: 
+
 ```function area(length,width){
 	return (length*width)/2
 }```
+
 Sure, the code runs and does what it is supposed to, but a user friendly refactor could be as follows:
+
 ```function area(length, width) {
 	return (length * width) / 2
 }```
+
 Just adding a couple of spaces saves time in allowing yourself to separate the different actions happening in the code. 
 
 As another consideration, it is generally not wise to separate things into a column format, as the eye tends to follow the vertical line of the column, rather than the horizontal line as intended. 
