@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Clean Code: Chapter 5 - Formatting"
-date: 2016-03-013
+date: 2016-03-13
 ---
 
 Formatting, while not consequential to how the code actually works, does make a huge difference in how future user of the code will be able to navigate and understand what is going on. 
