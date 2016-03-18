@@ -15,8 +15,10 @@ date: 2016-03-17
 Robert C. Martin, in his book *Clean Code*, outlines three laws to abide by when working in a test driven development (TDD) fashion: 
 
 **First Law** You may not write production code until you have written a failing unit test.
+
 **Second Law** You may not write more of a unit test than is sufficient to fail, and not compiling
 is failing.
+
 **Third Law** You may not write more production code than is sufficient to pass the currently
 failing test.
 
@@ -31,7 +33,11 @@ Each test should cover a single concept, a single *when/then* per test. Just lik
 Clean tests should follow **F.I.R.S.T** rules:
 
 -Test should be **F**ast
+
 -Tests should be **I**ndependent of other tests
+
 -Tests should be **R**epeatable in any environment
+
 -Tests should be **S**elf-validating, having a boolean value: pass or fail
+
 -Tests should be written in **T**imely fashion
