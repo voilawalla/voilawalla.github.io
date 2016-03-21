@@ -12,7 +12,7 @@ This applies to programming because a consistently and cleanly formatted applica
 
 There are several aspects that go into a well formatted application. Vertical and horizontal formatting are a couple of considerations to make when considering how your code and files should be organized.
 
-###Vertical Formatting
+### Vertical Formatting
 
 >Smaller files are usually easier to understand than large files are. 
 
@@ -24,7 +24,7 @@ With the code organized, you can make other considerations with regards to spaci
 
 It is appropriate to use empty lines to separate concepts, such as functions. Within a grouped concept, however, using empty lines can draw out methods, making them more difficult to follow. 
 
-###Horizontal Formatting
+### Horizontal Formatting
 
 Horizontal formatting, on the other hand, deals with the smaller context of single lines. The guideline for how long your lines should be should take into consideration a reader and the required movement it would take to read from left to right. You don’t want the reader to have to scroll to read a full line, nor would you want to have to shrink the font to a tiny size to get a single line effect. Typically 100-120 characters per line are appropriate. 
 
