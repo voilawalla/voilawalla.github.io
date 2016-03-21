@@ -14,31 +14,31 @@ SOLID is an acronym that speaks to five basic principles of Object Oriented soft
 **I**nterface segregation
 **D**ependency inversion
 
-## Single Responsibility Principle
+### Single Responsibility Principle
 
 > A class or module should have one, and only one, reason to change
 
 The ideas of *doing one thing* and *having one reason to change* can become convoluted, and for that reason, the single responsible principle gets missed so frequently. I often see single responsibility described as taking into consideration the actors that will be using each part of the system. For instance, business logic will be managed by one actor, whereas data presentation would be handled by a different actor. 
 
-## Open-Closed Principle 
+### Open-Closed Principle 
 
 > Objects or entities should be open for extension, but closed for modification
 
 The Open-Closed principle essentially means that you can add functions or fields to the data structures without changing the class itself; that the only reason to change the class is to add to it, not modify. This is a consideration in the design of an application that would make additions less likely to require an extensive amount of change to the already existing application. Keeping classes and functions small and focused helps with this because new functionality should be added as new classes. 
 
-## Liskov Substitution Principle
+### Liskov Substitution Principle
 
 > Let q(x) be a property provable about objects of x of type T. Then q(y)should be provable for objects y of type S where S is a subtype of T
 
 That is a very mathy looking statement. The Liskov substitution principle basically means that classes derived from base classes should be substitutable by the base class. A base class will have behaviors that should persist into the extended class. If the new class is changing the behavior of the base class, it is in violation of this principle. 
 
-## Interface Segregation Principle
+### Interface Segregation Principle
 
 > A client should never be forced to implement an interface that it doesn’t use or clients shouldn’t be forced to depend on methods they do not use.
 
 An interface is the part of the application that the client interacts with. This principle speaks to the idea of having smaller interfaces with smaller responsibilities rather than larger interfaces that support a wider breadth of behaviors that may or may not be necessary to the needs of the end user. Several interfaces may be used within the same class if the behavior intended by each is different.
 
-## Dependency Inversion Principle
+### Dependency Inversion Principle
 
 > Entities must depend on abstractions not on concretions. A high level module must not depend on the low level module, but they should depend on abstractions.
 
