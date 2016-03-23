@@ -9,6 +9,7 @@ Chapter 11 covers the higher level system design. One of the concepts that is di
 The application is a hangman (Snowman) game that displays letter blanks to a player and the player guesses the letters until either they guess the word, or they run out of guesses.
 
 In Swift, the application’s entry point and top-level code is contained in a file called `main.swift`. I also had another file called `Game.swift` where my game logic, and another called `Words.swift` where I kept an array of words to use for the game. I was using swift package manager, so my document tree was as follows: 
+
 ```
 ├── Package.swift
 ├── README.md
@@ -25,6 +26,7 @@ In Swift, the application’s entry point and top-level code is contained in a f
 My game needed to access the array in my dictionary file, so my first attempt (without dependency injection) looked like this: 
 
 main.swift
+
 ```
 import Game
 
@@ -32,11 +34,13 @@ let game = Game()
 ```
 
 Words.swift
+
 ```
 Public let words = [“some”, “words”, “that”, “were”, “in”, “an”, “array”]
 ```
 
 DictionaryManager.swift
+
 ```
 public class DictionaryManager {
 	let gameWords = words
@@ -52,6 +56,7 @@ public class DictionaryManager {
 
 
 Game.swift
+
 ```
 import Dictionary
 
@@ -68,6 +73,7 @@ By creating the `dictionaryManager` variable in my `Game.swift` file that create
 One step I could take would be to inject an instance of `DictionaryManager` into my `Game` instance when I create it. That would change the `main.swift` and `Game.swift` files as such:
 
 main.swift
+
 ```
 import Game
 import Dictionary
@@ -77,6 +83,7 @@ let game = Game(dictionaryManager: DictionaryManager)
 ```
 
 Game.swift
+
 ```
 import Dictionary
 
@@ -94,6 +101,7 @@ This gives me access to the instance of the `DictionaryManager` class instead of
 Well, I really only needed one word per game from the dictionary. I did not actually need to access the whole array of words or even the whole `DictionaryManager` class. My final iteration allowed me to get a random word and then inject that word into the instance of the `Game` class when it is created. 
 
 main.swift
+
 ```
 import Game
 import Dictionary
@@ -105,6 +113,7 @@ let game = Game(word: word)
 ```
 
 Game.swift
+
 ```
 public class Game {
 	var word: String
