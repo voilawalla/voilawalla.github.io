@@ -25,7 +25,7 @@ In Swift, the application’s entry point and top-level code is contained in a f
 
 My game needed to access the array in my dictionary file, so my first attempt (without dependency injection) looked like this: 
 
-main.swift
+*main.swift*
 
 ```
 import Game
@@ -33,13 +33,13 @@ import Game
 let game = Game()
 ```
 
-Words.swift
+*Words.swift*
 
 ```
-Public let words = [“some”, “words”, “that”, “were”, “in”, “an”, “array”]
+public let words = [“some”, “words”, “that”, “were”, “in”, “an”, “array”]
 ```
 
-DictionaryManager.swift
+*DictionaryManager.swift*
 
 ```
 public class DictionaryManager {
@@ -55,7 +55,7 @@ public class DictionaryManager {
 ```
 
 
-Game.swift
+*Game.swift*
 
 ```
 import Dictionary
@@ -72,7 +72,7 @@ By creating the `dictionaryManager` variable in my `Game.swift` file that create
 
 One step I could take would be to inject an instance of `DictionaryManager` into my `Game` instance when I create it. That would change the `main.swift` and `Game.swift` files as such:
 
-main.swift
+*main.swift*
 
 ```
 import Game
@@ -82,7 +82,7 @@ let dictionaryManager = DictionaryManager()
 let game = Game(dictionaryManager: DictionaryManager)
 ```
 
-Game.swift
+*Game.swift*
 
 ```
 import Dictionary
@@ -100,7 +100,7 @@ This gives me access to the instance of the `DictionaryManager` class instead of
 
 Well, I really only needed one word per game from the dictionary. I did not actually need to access the whole array of words or even the whole `DictionaryManager` class. My final iteration allowed me to get a random word and then inject that word into the instance of the `Game` class when it is created. 
 
-main.swift
+*main.swift*
 
 ```
 import Game
@@ -112,7 +112,7 @@ let word = dictionaryManager.getRandomWord()
 let game = Game(word: word)
 ```
 
-Game.swift
+*Game.swift*
 
 ```
 public class Game {
