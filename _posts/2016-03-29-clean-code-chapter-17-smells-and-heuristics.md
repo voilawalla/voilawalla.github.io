@@ -7,7 +7,7 @@ date: 2016-03-29
 Code smells are something my mentors here at 8th Light have been warning me about since I started my SnowMan project. I personally do not have the instinctive nose as do they, so I decided that I am going to make a quick cheat sheet with those that are listed in the book. 
 
 Code Smell | Description | Refactoring
---- | --- | ---
+-------------------- | -------------------- | --------------------
  | |
 Comments | |
  | |
