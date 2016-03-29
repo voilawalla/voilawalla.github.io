@@ -9,7 +9,7 @@ Code smells are something my mentors here at 8th Light have been warning me abou
 Code Smell | Description | Refactoring
 -------------------- | -------------------- | --------------------
  | |
-Comments | |
+**Comments** | |
  | |
 Inappropriate information | Record keeping or other metadata in source code | Keep this type of comment in other systems 
  | |
@@ -21,13 +21,13 @@ Poorly written comment | Comment is not clear about its purpose for writing | Wr
  | |
 Commented out code | Chunks of code not in use but lingering in the source code | Delete it, it will become obsolete if left long enough
  | |
-Environment | |
+**Environment** | |
  | |
 Build requires more than one step | Requiring multiple steps to build | Combine setup to a single command
  | |
 Tests require more than one step | Requiring multiple calls to run all tests | Reorganize files to call back to a spec runner
  | |
-Functions | |
+**Functions** | |
  | |
 Too many arguments | Three or more arguments on a function | Try for zero arguments, add only if necessary
  | |
@@ -37,7 +37,7 @@ Flag arguments | Boolean arguments hint that the function does more than one thi
  | |
 Dead function | Methods that are not called | Delete and don't write until they are needed
  | |
-General | |
+**General** | |
  | | 
 Multiple languages in one source file | Mixing multiple languages in one file | Separate languages where possible and practical into their own source file
  | |
