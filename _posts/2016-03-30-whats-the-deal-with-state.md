@@ -28,8 +28,6 @@ public class Game {
 }
 ```
 
-This one gets a little bit deeper and into a lot more refactoring. 
-
 There are three issues going on here. First, I am holding onto the state of the guess. Second, I am holding onto the state of the guess in the `Game` class rather than the `GuessManager` class. Third, that the state of the guess is mutable.
 
 The reason that I thought that I needed a state was because I was changing the value of the guess during the game, and then using that updated value in multiple different methods. Consider the following functions from my `Game` class:
