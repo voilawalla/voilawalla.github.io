@@ -26,12 +26,13 @@ public class Game {
 		guess = “” 	// PROBLEM
 	}
 }
+```
 
 This one gets a little bit deeper and into a lot more refactoring. 
 
 There are three issues going on here. First, I am holding onto the state of the guess. Second, I am holding onto the state of the guess in the `Game` class rather than the `GuessManager` class. Third, that the state of the guess is mutable.
 
-The reason that I thought that I needed a state was because I was changing the value of the guess during the game, and then using that updated value in multiple different methods. Consider the following functions from my `Game` class: 
+The reason that I thought that I needed a state was because I was changing the value of the guess during the game, and then using that updated value in multiple different methods. Consider the following functions from my `Game` class:
 
 ``` swift 
 public func playGame() {
@@ -110,6 +111,7 @@ While I am no longer calling my `isGameOver()` method as part of my game loop, I
 public func isGameOver(guess: String) {
 	gameOver = guessManager.hasNoGuessesRemaining() || isWinner(guess)
 }
+```
 
 I can pass the guess to this function from where I will be calling it, which is within the `playerTurn()` private method below. The guess that is being passed in will be the guess that the player is being prompted for. That guess is then passed into the `isWinner()` function to decide whether or not there is a winner.
 
