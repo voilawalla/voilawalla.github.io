@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Software Craftsmanship - Part 1: Questioning Software Engineers”
+title: “Software Craftsmanship: Part 1 - Questioning Software Engineers”
 date: 2016-03-31
 ---
 
