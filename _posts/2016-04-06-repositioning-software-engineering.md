@@ -10,7 +10,7 @@ Software engineering is appropriate when it comes to developing applications tha
 
 The typical method of development used in software engineering is the waterfall method. The name comes from the way in which the workflow passes over each step of the process, cascading like a waterfall. 
 
-![image](..waterfall-model.gif)
+![image](../images/waterfall-model.gif)
 
 The number of steps can differ between models, but the generally accepted steps mirror those of the software development lifecycle:
 
