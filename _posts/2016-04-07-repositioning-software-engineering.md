@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Repositioning Software Engineering”
+title: “What to do on Monday morning”
 date: 2016-04-07
 ---
 
@@ -14,7 +14,7 @@ I cannot personally speak to the value of a computer science degree. I earned a 
 
 My experience at the coding bootcamp was more of that, but at ten times the pace. I have always maintained that my learning style is slow and deliberate, but that works for me. I like to take deep dives into concepts, and really find out what is going on beneath the hood. Coding bootcamps are not congruent to that style. 
 
-The podcast that I mentioned ([Coder Radio | CR177]) pointed out that the problem with these boot camps is that quality varies greatly. The speaker notes that people who go to boot camps are going specifically looking to get hired on the other end, basically to learn as much as is necessary to be employable. The standard for employable also varies greatly. 
+The podcast that I mentioned [Coder Radio | CR177](http://www.jupiterbroadcasting.com/89986/coder-puppy-mills-cr-177/) pointed out that the problem with these boot camps is that quality varies greatly. The speaker notes that people who go to boot camps are going specifically looking to get hired on the other end, basically to learn as much as is necessary to be employable. The standard for employable also varies greatly. 
 
 An employer who is familiar with the software craftsmanship model is not going to find these types of applicants appealing. There is absolutely a place for coding bootcamps for people to start on the journey, but without some other supplement like a degree, on the job training programs, or an apprenticeship, the orphaned bootcamp experience in my opinion does not carry much weight.
 
