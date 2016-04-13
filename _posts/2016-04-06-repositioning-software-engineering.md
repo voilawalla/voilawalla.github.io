@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Repositioning Software Engineering”
+title: Repositioning Software Engineering
 date: 2016-04-06
 ---
 
@@ -8,11 +8,7 @@ Software engineering is appropriate when it comes to developing applications tha
 
 ### Waterfall
 
-The typical method of development used in software engineering is the waterfall method. The name comes from the way in which the workflow passes over each step of the process, cascading like a waterfall. 
-
-![image](../images/waterfall-model.gif)
-
-The number of steps can differ between models, but the generally accepted steps mirror those of the software development lifecycle:
+The typical method of development used in software engineering is the waterfall method. The name comes from the way in which the workflow passes over each step of the process, cascading like a waterfall. The number of steps can differ between models, but the generally accepted steps mirror those of the software development lifecycle:
 
 - Requirements analysis
 - Design

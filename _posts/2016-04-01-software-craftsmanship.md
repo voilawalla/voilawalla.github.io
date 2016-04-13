@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Software Craftsmanship”
+title: Software Craftsmanship
 date: 2016-04-01
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Implications of Software Craftsmanship”
+title: Implications of Software Craftsmanship
 date: 2016-04-05
 ---
 

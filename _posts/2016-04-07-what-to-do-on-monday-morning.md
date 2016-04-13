@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “What to do on Monday morning”
+title: What to do on Monday morning
 date: 2016-04-07
 ---
 
