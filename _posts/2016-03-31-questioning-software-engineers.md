@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Questioning Software Engineers”
+title: Questioning Software Engineers
 date: 2016-03-31
 ---
 
