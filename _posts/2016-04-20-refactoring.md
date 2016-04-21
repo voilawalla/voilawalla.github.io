@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Refactoring
-date: 2016-04-21
+date: 2016-04-20
 ---
 
 If you look in the refrigerator at [8th Light](www.8thlight.com), you can usually tell when I have been there. The fridge will be stocked with all labels facing forward, all cans and bottles covered and aligned, just as the Marine Corps taught me. Everything has its place. Someone reaching into the fridge can quickly and easily find what they are looking for. This is how I want to leave my code. 
