@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-wide
 title: 
 date: 2016-04-22
 ---
