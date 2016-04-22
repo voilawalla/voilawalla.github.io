@@ -30,5 +30,3 @@ At one point in the process, both Bobs decided that a test that they had written
 Several times the Bobs decided to leave the code in, by their standards, not optimal form. They did not need to make everything perfect the first time around. That’s not to say that they just slapped logic together. If they felt that a function that logically worked but could be improved, if they did not immediate idea, they opted to leave the code in its current working state and to revisit it while refactoring. They were committing to the working code temporarily in the hopes that time and future work on the module would reveal a better solution. 
 
 An example of this was when they were working on how to figure out the end of the game. They decided that the definition of a current frame is the frame after the last completed frame. Being that there are 10 frames, this would mean that the value for the current frame at the end of the game would be 11. Obviously there is no 11th frame, but this was something they decided to sit on until they figured out a better approach to ending the game.
-
-
