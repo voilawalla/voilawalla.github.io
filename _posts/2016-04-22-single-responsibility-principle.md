@@ -18,9 +18,9 @@ Let’s look at an example of a single responsibility principle violation:
 
 ```
 class Person { 
-let firstName: String 
-let lastName: String 
-let email: String
+    let firstName: String 
+    let lastName: String 
+    let email: String
 
     init(firstName: String, lastName: String, email: String) {
         self.firstName = firstName
