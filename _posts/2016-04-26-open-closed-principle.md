@@ -10,7 +10,7 @@ One way that you can think about OCP is that in order to make modifications, you
 
 In my past life, I used to work as a countertop salesperson and I would have to do in home estimates for my clients to determine the total area of granite or marble that they would be consuming for their project. Most countertops were pretty basic designs, usually an L shape or a “U”, where we had just a series of rectangles to estimate. Every once in a while, though, we had to create more contemporary designs, like this kitchen that features a circular end for seating
 
-![circle island](http://st.hzcdn.com/simgs/3b510bb500b52422_4-8554/contemporary.jpg) that encorporates circles.
+![circle island](http://st.hzcdn.com/simgs/3b510bb500b52422_4-8554/contemporary.jpg)
 
 From the estimating perspective for the customer, they are going to be paying for the total rectangular enclosure of the shape, so a pentagon would really be counted as the smallest rectangle in which it could reside, and a circle would be the square of its diameter. However, when we were figuring area for our records of *actual* stone use, we needed to know how to figure the area of all kinds of shapes.
 
@@ -43,6 +43,7 @@ class CountertopAreaCalculator
 	}
 }
 ```
+### Problem
 
 But wait, I did not consider my circles. They have their own struct that considers a circle’s radius along with the constant of PI. If I want to figure in circles, I have to *modify* the `CountertopAreaCalculator` class, which is a violation of the *closed to modification* rule of OCP. I am adding methods to calculate each shape’s individual area, and changing the guts of the `calculateArea()` function entirely:
 
@@ -73,6 +74,8 @@ func calculateArea(rectangles: [Rectangle], circles: [Circle], trapezoids: [Trap
 ```
 
 As you can see, modifying the class every time I need to add a new shape is not very efficient. Every time I change the class, I have to recompile, which affects other modules that depend on this class. Sure, on this scale, it may not seem like a huge deal, but no example will be this small in real life.
+
+### Solution
 
 A way to solve this that would not be in violation of OCP would be through use of abstractions. I can create a `Shape` abstraction that each of the shape types can adopt. I am going to make a `Shape` protocol that requires the `calculateShapeArea()` function in each adopting class.
 
