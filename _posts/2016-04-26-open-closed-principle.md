@@ -19,13 +19,13 @@ A demonstration of this principle is with figuring the total area of a counterto
 ```
 class Rectangle
 {
-var length: Float
-var width: Float
+	var length: Float
+	var width: Float
 
-init(length: Float, width: Float) {
-	self.length = length
-	self.width = width
-}
+	init(length: Float, width: Float) {
+		self.length = length
+		self.width = width
+	}
 }
 ```
 
@@ -35,12 +35,12 @@ In order to figure out my total area, I just use my handy `CountertopAreaCalcula
 class CountertopAreaCalculator
 {
 	func calculateArea(rectangles: [Rectangle]) -> Float {
-area: Float = 0
-	for rectangle in rectangles {
-		area += rectangle.width * rectangle.height
-}
-	return area
-}
+		area: Float = 0
+		for rectangle in rectangles {
+			area += rectangle.width * rectangle.height
+		}
+		return area
+	}
 }
 ```
 
@@ -49,9 +49,9 @@ But wait, I did not consider my circles. They have their own struct that conside
 ```
 func calculateArea(rectangles: [Rectangle], circles: [Circle]) -> Float {
 	area: Float = 0
-area += Float(calculateRectangleArea(rectangles))
-area += Float(calculateCircleArea(circles))
-return area
+	area += Float(calculateRectangleArea(rectangles))
+	area += Float(calculateCircleArea(circles))
+	return area
 }
 ```
 
@@ -65,10 +65,10 @@ Now I have to add a `Trapezoid` class, which is not a big deal, but I also have 
 ```
 func calculateArea(rectangles: [Rectangle], circles: [Circle], trapezoids: [Trapezoid]) -> Float {
 	area: Float = 0
-area += calculateRectangleArea(rectangles)
-area += calculateCircleArea(circles)
-area += calculateTrapezoidArea(trapezoids)
-return area
+	area += calculateRectangleArea(rectangles)
+	area += calculateCircleArea(circles)
+	area += calculateTrapezoidArea(trapezoids)
+	return area
 }
 ```
 
@@ -88,30 +88,30 @@ Now I have to redesign my rectangle, circle and trapezoid classes to adopt this 
 class Rectangle : Shape
 {
 	var length: Float
-var width: Float
+	var width: Float
 
-init(length: Float, width: Float) {
-	self.length = length
-	self.width = width
-}
+	init(length: Float, width: Float) {
+		self.length = length
+		self.width = width
+	}
 
-func calculateShapeArea() {
-return Width*Height;
-}
+	func calculateShapeArea() {
+		return width * height;
+	}
 }
 ```
 
 Now when I call on my `CountertopAreaCalculator` class to give me a total area, the type of shape that is being used in the `calculateArea()` method does not matter because each individual shape is handling the calculation of its own area.
 
 ```
-class CountertopAreaCalculator
-{
-func calculateArea(rectangles: [Rectangle]) -> Float {
-	area: Float = 0
-    	for shape in shapes
-    		area += shape.calculateShapeArea();
-    	}
-	return area;
+class CountertopAreaCalculator {
+	func calculateArea(rectangles: [Rectangle]) -> Float {
+		area: Float = 0
+	    	for shape in shapes
+	    		area += shape.calculateShapeArea();
+	    	}
+		return area;
+	}
 }
 ```
 
