@@ -1,5 +1,5 @@
 ---
-layout: post-wide
+layout: post
 title: The Open-Closed Principle
 date: 2016-04-26
 ---
