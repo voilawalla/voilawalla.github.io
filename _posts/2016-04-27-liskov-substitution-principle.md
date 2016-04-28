@@ -37,7 +37,7 @@ Now let’s say that we are working with a fancy future car that is a subtype of
 
 Not so fast. Let’s think about one aspect of a car, refueling. For the base class of `Car`, the fuel is given in terms of a liquid to a fuel tank from which the engine feeds. But with `FutureCar`, the fuel that it is receiving is in the form of solar rays converted to energy. 
 
-![Solar Powered Vehicle](http://sunwindsolar.com/wp-content/uploads/2013/01/SOLARCAR.jpg)ßÍ
+![Solar Powered Vehicle](http://sunwindsolar.com/wp-content/uploads/2013/01/SOLARCAR.jpg)
 
 The `refuel()` function in both classes is not, in fact the same. A future car could not be substituted for a Car because neither would not satisfy the other’s energy acquisition requirements. 
 
