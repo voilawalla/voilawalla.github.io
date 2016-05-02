@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Command Pattern
-date: 2016-04-28
+date: 2016-04-29
 ---
 
 The command pattern is a design pattern that aids in maintaining S.O.L.I.D code by encapsulating certain actions within classes, allowing for extension and facilitating testing. It completely decouples the sender, the object evoking the action, and the receiver, the object that is receiving the execution request. 
