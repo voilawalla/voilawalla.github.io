@@ -23,34 +23,39 @@ Here we are dealing with a Drink protocol in a cafe setting. Consider going to S
 
 Obviously there will be differences between the drinks. A lemonade requires ice. A coffee has to be brewed. But at the essence, each a coffee, a tea, and a lemonade needs that which is defined in the Drink protocol. 
 
+My coffee class will encorporate all elements of the Drink protocol. Its ingredients differ from a lemonade or a tea, and a it will need a different series of steps to make than the other drinks. We have an additional need to grind beans for coffee
+
 ``` swift 
 class Coffee : Drink {
     var ingredients: [String]
 
     init(ingredients: [String]) {
         self.ingredients = ingredients      
-// coffee grounds, hot water, cream, sugar
+        // coffee grounds, hot water, cream, sugar
     }
 
     func selectCup(size: String) {
         // logic to select hot cup for coffee
     }
 
-func makeDrink(ingredients: [String]) {
-// logic to make coffee (grind beans, brew)
+    func makeDrink(ingredients: [String]) {
+        // logic to make coffee (grind beans, brew)
+    }
+
+
+    func deliverDrink() -> Drink {
+        // logic to deliver coffee
+    }
+
+    private func grindBeans() {
+        // logic to grind beans
+    }
+
+    . . .
 }
-
-
-func deliverDrink() -> Drink {
-    // logic to deliver coffee
-}
-
-private func grindBeans() {
-    // logic to grind beans
-}
-
-. . .
 ```
+
+My tea class, again, follows the protocol, but the directions and ingredients are specific to tea.
 
 ``` swift 
 class Tea : Drink {
@@ -58,24 +63,27 @@ class Tea : Drink {
 
     init(ingredients: [String]) {
         self.ingredients = ingredients      
-// tea bag, hot water, lemon
+        // tea bag, hot water, lemon
     }
 
     func selectCup(size: String) {
         // logic to select hot cup for tea
     }
 
-func makeDrink(ingredients: [String]) {
-// logic to make tea (steep tea bag, squeeze lemon)
+    func makeDrink(ingredients: [String]) {
+        // logic to make tea (steep tea bag, squeeze lemon)
+    }
+
+
+    func deliverDrink() -> Drink {
+        // logic to deliver tea
+    }
+
+    . . .
 }
-
-
-func deliverDrink() -> Drink {
-    // logic to deliver tea
-}
-
-. . .
 ```
+
+In addition to lemonade having different ingredients and steps to produce, there is also a different type of cup for cold drinks than for the hot tea and coffee. 
 
 ``` swift 
 class Lemonade : Drink {
@@ -83,27 +91,28 @@ class Lemonade : Drink {
 
     init(ingredients: [String]) {
         self.ingredients = ingredients      
-// lemons, cold water, sugar
+        // lemons, cold water, sugar
     }
 
     func selectCup(size: String) {
         // logic to select cold cup for lemonade
     }
 
-func makeDrink(ingredients: [String]) {
-// logic to make lemonade (squeeze lemons, add sugar)
+    func makeDrink(ingredients: [String]) {
+        // logic to make lemonade (squeeze lemons, add sugar)
+    }
+
+
+    func deliverDrink() -> Drink {
+        // logic to deliver lemonade
+    }
+
+    private func squeezeLemons() {
+        // logic to squeeze lemons
+    }
+
+    . . .
 }
-
-
-func deliverDrink() -> Drink {
-    // logic to deliver lemonade
-}
-
-private func squeezeLemons() {
-    // logic to squeeze lemons
-}
-
-. . .
 ```
 
 So there we have three separate classes that all use the *template* Drink. Drink is a contract by which Coffee, Tea and Lemonade all must abide. The generic Drink pattern allows for many detailed implementations of drinks. The protocol is a high level plan that can be reused independently over low level details. 
