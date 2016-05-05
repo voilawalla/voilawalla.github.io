@@ -10,7 +10,7 @@ When using the pattern, the `null` is not necessarily unexpected; this is not so
 
 The null object itself is a subclass of an abstract class that defines the pattern for the objects for which it will implement. The null object will have the same methods as it’s sister not-null object, but generally these would be void of function. In python, my current language of assignment, we would use the `pass` keyword in these null object methods. 
 
-![null object pattern](https://sourcemaking.com/files/v2/content/patterns/Null_Object2-2x.png)
+![null object pattern](http://www.codeproject.com/KB/architecture/1073348/UML.png)
 
 This leaves us with two versions of the object, one a working object with implementable functions, and a second with all of the same methods, just the methods do nothing. Because both are depending on the same abstract class, the null object is completely substitutable for the real object.
 
