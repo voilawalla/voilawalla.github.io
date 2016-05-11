@@ -5,4 +5,24 @@ $(document).ready(function() {
       $(this).tab('show');
     });
   });
+
+  $(window).load(function() {
+    $('#splashscreen').delay(3200).fadeOut("slow");
+  });
+
+  $(window).load(function() {
+    $('#sec-home').delay(4200).fadeIn("slow");
+  });
+
+  $(function(){
+ 
+    var $container = $('#grid');
+  
+    $container.imagesLoaded( function(){
+      $container.masonry({
+        itemSelector : '.grid-item'
+      });
+    });
+  
+  });
 });

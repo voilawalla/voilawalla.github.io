@@ -1,6 +1,6 @@
 ---
 layout: post-wide
-title: 
+title: The Single Responsibility Principle
 date: 2016-04-22
 ---
 

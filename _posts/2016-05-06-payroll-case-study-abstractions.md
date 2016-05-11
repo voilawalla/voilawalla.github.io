@@ -37,7 +37,7 @@ class MockIO(Interactable):
   def display(self, output):
     self.display_called = True
     self.output_stream = output
- ```
+```
 
 Here I am setting boolean variables to `False`, and changing the value when the method is called to `True`. Now, when I have a method that requires calling the method, the value will be true, and I can test the boolean value that notes that the method was called, rather than relying on data being passed to and from the console. 
 

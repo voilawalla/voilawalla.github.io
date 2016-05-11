@@ -1,0 +1,31 @@
+---
+layout: test-blog
+title: Nicole Carpenter - Blog
+---
+
+<div class='sidebar-menu'>
+    <h1>nicole</h1>
+    <h1>carpenter</h1>
+    <ul class='smenu'>
+        <li><a href='/about.html'>About</a></li>
+        <li><a href='/projects.html'>Personal Projects</a></li>
+        <li><a href='/blog/index.html'>Blog</a></li>
+        <li><a href='/contact.html'>Contact</a></li>
+    </ul>
+</div>
+
+<div class='container-right'>
+    <div class="grid" id='grid' data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 25 }'>
+        {% for post in site.posts %}
+            <div class="grid-item">
+                <h2>{{ post.title }}</h2>
+                <span class="tight-top"><h2><small>{{ post.date | date_to_string }}</small></h2></span>
+                <p>{{ post.content | strip_html | truncatewords:45}}</p>
+                <br>
+                <a href="{{ post.url }}">Read more...</a>
+                <br>
+                <br>
+            </div>
+        {% endfor %}
+    </div>
+</div>
