@@ -18,15 +18,16 @@ The issue came when I was trying to establish a class to set up the game before 
 
 ```
 public func assignGameWord() -> Word {
-  let options = ["1 - Random", "2 - Select"]                                                                                                            
-  let type = getWordSelectionType(options)                                                                                                              
-  if type == 1 {                                                                                                                                        
-    return wordBuilder.buildWord(wordListManager.getRandomWord())                                                                                       
-  } else {                                                                                                                                              
-    view.promptReceiveWord()                                                                                                                            
-  return wordBuilder.buildWord(view.receiveWord())                                                                                                    
-  }                                                                                                                                                     
-}          
+  let options = ["1 - Random", "2 - Select"]
+  let type = getWordSelectionType(options)
+  if type == 1 {
+    return wordBuilder.buildWord(wordListManager.getRandomWord())
+  } else { 
+    view.promptReceiveWord()
+    return wordBuilder.buildWord(view.receiveWord())
+  }
+}
+```
 
 The problem was that my Application package in which the GameSetUp class existed, had a dependendency on the Dictionary package, when it should have been the other way around. The circular dependency arose when in addition to the Application depending on the Dictionary, the Dictionary would have to depend on the Application in the event that the user would choose to select a word. This was how my `Package.swift` file looked.
 

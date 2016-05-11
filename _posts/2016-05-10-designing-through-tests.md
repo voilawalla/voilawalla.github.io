@@ -10,7 +10,7 @@ I would like to pause momentarily to pat myself on the back for how steadfast I 
 
 #### Rethinking heavy up front design
 
-TDD stands for **Test Driven Development* but I am coming to realize that that last **D** can also apply to **Design**. This is a realization I came to while reading chapter 19 of Uncle Bob’s *Agile Software Development - Principles, Patterns and Practices*, which is where he walks through the process of creating a payroll system. 
+TDD stands for **Test Driven Development** but I am coming to realize that that last **D** can also apply to **Design**. This is a realization I came to while reading chapter 19 of Uncle Bob’s *Agile Software Development - Principles, Patterns and Practices*, which is where he walks through the process of creating a payroll system. 
 
 One thing of note is his deliberate lack of attention paid to UML design. Had this chapter been my first of Martin’s writing, I would have been surprised about this. It would have been completely counterintuitive for me to want to jump directly into coding without having a concrete plan. I would have spent a significant amount of time and consideration as to how the application would be laid out, what all connected to what, how everything related. I would sketch and revise, sketch and revise until I decided on my interpretation of the perfect system. 
 
