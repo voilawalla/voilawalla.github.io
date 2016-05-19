@@ -6,7 +6,7 @@ date: 2016-05-12
 
 The Composite pattern offers a way to pair down one to many relationships at the file level into one to one relationships by creating a composite object that will maintains knowledge of many objects. You can manipulate the composite to act on a group of objects instead of having each object implemented individually. 
 
-![Composit UML class diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Composite_UML_class_diagram_%28fixed%29.svg/1200px-Composite_UML_class_diagram_%28fixed%29.svg.png)
+![Composit UML class diagram](http://i.stack.imgur.com/TxEpe.png)
 
 The composite can help with pairing down duplication because it will stand in for the same action for all of the objects. This pattern works best when there is a tree code structure, structure, there is a recursive element, and we can group the components together because we are going to be treating them similarly. 
 The interface implemented by the leaf and composite is the component. Within the composite, each object will have similar functions such as do() for a command object, or draw() for a composite of shapes. Calling the function on the composite will trigger the action for all elements contained within. The composite usually has a method called hasChildren() to manage it’s children in order to be able to iterate over those children performing whatever function that composite method specified. 
