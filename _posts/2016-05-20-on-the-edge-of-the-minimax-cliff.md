@@ -18,6 +18,7 @@ Use a whiteboard or a piece of paper and use a simple case for your tic tac toe 
 
 #### Explain it to someone
 Better if you explain it to someone that has done it before. They can probably tell you if you are right or where the holes in your thinking are. If you haven’t done it correctly, keep on whiteboarding it with the feedback you’ve been given until you can explain exactly what is going on.
+
 #### Test for obvious cases first
 You should test for the easiest board states to start. What are some easy ways to test if the AI you’ve built is giving you the right moves? It should win if it can win, and block if it can block. Or even more obvious, does it move in the last spot on the board if it is its turn? Once you get these simple tests passing, then you can move on to more difficult cases.
 
