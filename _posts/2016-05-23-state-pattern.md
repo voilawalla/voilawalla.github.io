@@ -6,9 +6,7 @@ date: 2016-05-23
 
 A few weeks ago, I wrote a [post](http://nicolecarpenter.github.io/2016/03/30/whats-the-deal-with-state.html) about state in my Snowman application. In the post I noted that the state of something refers to the contents stored in memory at any given point in time. The State Pattern is a design pattern that implements a state machine in an object-oriented way. 
 
-To demonstrate this pattern, let’s look at the states of an online purchase. 
-
-To think about the different states, we would consider the status of an order from the moment you click the checkout button, until that order gets delivered to your door. The order is either in an unpaid or a paid state. The order is either shipped or received. Each of these individually is a state of which the order can occupy.
+To demonstrate this pattern, let’s look at the states of an online purchase. To think about the different states, we would consider the status of an order from the moment you click the checkout button, until that order gets delivered to your door. The order is either in an unpaid or a paid state. The order is either shipped or received. Each of these individually is a state of which the order can occupy.
 
 Different functions would then be associated for changing the state of an order. A user submitting credit card info, and the website verifying that info, would move the state from unpaid to paid. Packaging the and shipping it from the warehouse, would move the state of the order from paid to shipped. UPS or Fedex sending the store confirmation of delivery would move the state of an order to received.
 
@@ -43,7 +41,7 @@ public class UnpaidState: State {
         print("Sorry can't ship an item unless it's paid")
     }
 
-    public void orderDelivered() {
+    public func orderDelivered() {
         print("Order hasn't shipped yet!")
     }
 
@@ -109,8 +107,6 @@ public class Order {
 
 For the last variable declaration we can see the default state of an order is unpaid, which makes sense. We then have getter methods for each state of an order, unpaid, paid, shipped and delivered. Then calling the verify credit card, ship, and order delivered methods will then call those methods on whatever the current state is.
 
-The downsides to doing this is we end up creating a lot more classes, we are creating one for every state of an order. Also you could argue we are breaking the Interface Segregation Principle, we are implementing each function from the state interface, but simply printing that a method is not allowed seems like an empty implementation.
+The downsides to doing this is we end up creating a lot more classes; we are creating one for every state of an order. Also you could argue we are breaking the Interface Segregation Principle, we are implementing each function from the state interface, but simply printing that a method is not allowed seems like an empty implementation. The upside is it makes our code more extensible, if we want to add a new state to an order, we can define how it handles the different methods accordingly. 
 
-The upside is it makes our code more extensible, if we want to add a new state to an order, we can define how it handles the different methods accordingly. Also this code is more object oriented focused than the alternative.
-
-All of these patterns we have benefits and costs. A lot of times the benefit is more readability, extensibility, and DRYer code, with the cost often being more classes, and therefore one or two more balls we have to juggle mentally to understand how objects interact.
+All of these patterns we have benefits and costs. A lot of times the benefit is more readability, extensibility, and more DRY code, with the cost often being more classes, and therefore one or two more balls we have to juggle mentally to understand how objects interact.
