@@ -16,7 +16,7 @@ In the image above, the circles represent states and the arrows are transitions 
 
 In programming, to set up a state machine, you would set up an array or some similar collection structure, which will store the possible states and a pointer would point to the starting position. Each state contains a lookup table that shows what the next state is given an input symbol. When a symbol is read in the program, the program will look up the symbol in the table and move the pointer to the new state.
 
-Several resources reference a turnstile as a way to demonstrate the FSM concept. For a turnstile, there is either a locked or an unlocked state. The transition occurs when an input is presented. In the diagram below, the input is a coin, but I ride the L in the 21st century, so my input is a CTA.
+Several resources reference a turnstile as a way to demonstrate the FSM concept. For a turnstile, there is either a locked or an unlocked state. The transition occurs when an input is presented. In the diagram below, the input is a coin, but I ride the L train in the 21st century, so my input is a CTA card.
 
 ![turnstile state machine](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Turnstile_state_machine_colored.svg/330px-Turnstile_state_machine_colored.svg.png)
 
