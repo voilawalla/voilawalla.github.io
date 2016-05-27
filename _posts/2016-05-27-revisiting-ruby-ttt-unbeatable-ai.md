@@ -1,6 +1,6 @@
 ---
 layout: post
-Title: Bonus: Revisiting Ruby Tic Tac Toe Unbeatable AI
+Title: Revisiting Ruby TTT Unbeatable AI
 date: 2016-05-27
 ---
 
