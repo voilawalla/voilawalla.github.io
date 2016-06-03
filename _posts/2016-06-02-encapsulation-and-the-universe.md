@@ -31,7 +31,7 @@ end
 # etc
 ```
 
-Encapsulation of the same series of methods in Python would be achieved by adding an underscore to the beginning of the method name, like `_find_winning_columns()`. In Java, we would use access modifiers, which I go into a bit deeper [in this post] (http://nicolecarpenter.github.io/2016/03/26/clean-code-chapter-14-successive-refinement.html), and also getters and setters to encapsulate public variables. Consider [this example](http://www.tutorialspoint.com/java/java_encapsulation.htm) from the Java docs.
+Encapsulation of the same series of methods in Python would be achieved by adding an underscore to the beginning of the method name, like `_find_winning_columns()`. In Java, we would use access modifiers, which I go into a bit deeper [in this post](http://nicolecarpenter.github.io/2016/03/26/clean-code-chapter-14-successive-refinement.html), and also getters and setters to encapsulate public variables. Consider [this example](http://www.tutorialspoint.com/java/java_encapsulation.htm) from the Java docs.
 
 ```
 public class EncapTest{
