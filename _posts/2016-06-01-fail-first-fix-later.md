@@ -47,9 +47,9 @@ I am going to incrementally build on my first test by expanding my logic to supp
 The weird part of the refactor leg of the cycle is that, if you have a passing test, why should you go in there and start messing around?
 
 
-> *If it ain’t broke, don’t fix it!*
+> *If it ain’t broke, don’t fix it!... Right?*
 
-Here we are relying on the value of the test that we just wrote, because if our test fails when we make a change, then we know that the test is doing what it is supposed to be doing. Refactoring a method could be for any number of reasons, including to make the function cleaner, more readable, or to remove duplication.
+Not quite. Here we are relying on the value of the test that we just wrote, because if our test fails when we make a change, then we know that the test is doing what it is supposed to be doing. Refactoring a method could be for any number of reasons, including to make the function cleaner, more readable, or to remove duplication.
 
 In the Roman Numerals example, sure I could continue to expand a single method with if/else statements: 
 
