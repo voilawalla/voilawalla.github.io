@@ -11,7 +11,8 @@ The concept of encapsulation is pretty simple: hide what you don’t want others
 There are different ways to do this in every language. In my tic tac toe game that I submitted as part of my application, I wrote the code in Ruby, a language that makes use of a single `private` keyword to make the methods only visible to the class in which they reside. 
 
 
-```
+```ruby
+
 def find_winning_combinations
       find_winning_rows + find_winning_columns + find_winning_diagonals
 end
@@ -27,13 +28,13 @@ def find_winning_columns
       rows.transpose
 end
 
-
 # etc
 ```
 
 Encapsulation of the same series of methods in Python would be achieved by adding an underscore to the beginning of the method name, like `_find_winning_columns()`. In Java, we would use access modifiers, which I go into a bit deeper [in this post](http://nicolecarpenter.github.io/2016/03/26/clean-code-chapter-14-successive-refinement.html), and also getters and setters to encapsulate public variables. Consider [this example](http://www.tutorialspoint.com/java/java_encapsulation.htm) from the Java docs.
 
-```
+```java
+
 public class EncapTest{
 
    private String name;
