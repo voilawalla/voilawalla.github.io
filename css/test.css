@@ -48,6 +48,11 @@ p {
     margin: 0 auto;
 }
 
+.container--relative {
+    position: relative;
+    background: red;
+}
+
 h1 {
     margin: 0;
     font-family: 'Roboto', san-serif;
@@ -158,7 +163,7 @@ h1:last-child {
 .bmenu{
     padding: 50px 0px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     background: rgba(0,0,0,0.8);
     width: 500px;
     height: 400px;
@@ -223,7 +228,7 @@ h1:last-child {
 
 .sp-container {
     width: 900px;
-    height: 1000px;
+    height: 100vh;
     position: relative;
     margin: 180px auto 0px auto;
 }
