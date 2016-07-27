@@ -19,7 +19,9 @@ One example of an idiom in Clojure is how collection items are separated. In mos
 ```ruby
 my_array = [1, 2, 3]
 ```
+
 In Clojure, on the other hand, the idiomatic way is to not include commas. The same structure in Clojure would look like this:
+
 ```clojure
 (def my-vector [1 2 3])
 ```
