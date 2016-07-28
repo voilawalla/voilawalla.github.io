@@ -85,8 +85,8 @@ So what would happen if I did not give my pattern room to grow? Say I kept the w
 The way I coded this, I am feeding the application one pattern at a fixed size. I am determining the evolution (how the board changes from one state to the next) based on each space’s neighbors. With a fixed width of a board, I am creating a boundary at the edge of the board. This means that if a pattern expands and there are three cells in a row on the border of the world, according to the game rules, a new living cell should be created.
 
 ```clojure
-[| | |]       =>       [[  |  ]
-                        [  |  ]
+                       [[  |  ]
+[| | |]       =>        [  |  ]
                         [  |  ]]
 ```
 
