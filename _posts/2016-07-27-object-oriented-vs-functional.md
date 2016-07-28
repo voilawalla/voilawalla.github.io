@@ -34,8 +34,9 @@ Functional programming is a way of designing code that is absent of side effects
 
 Given the benefits of OO programming listed above, you might be wondering under what circumstances functional programming would be preferred. Rather than trying to paraphrase, I will just quote a great [Stack Overflow answer](http://stackoverflow.com/a/2079678) addressing this topic:
 
-_When you anticipate a different kind of software evolution:
-* Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.
-* Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone._
+_When you anticipate a different kind of software evolution:_
+
+* _Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone._
+* _Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone._
 
 First of all, I don’t want to give the impression that object oriented programming is the strict big brother to functional programming. Functional programming has its place and its own benefits. The decision to choose a functional style versus an object oriented style should not depend on solely one factor, but should be the outcome of considerations about both the short and long term goals of the project and the abilities of the people who are on the project team. 
