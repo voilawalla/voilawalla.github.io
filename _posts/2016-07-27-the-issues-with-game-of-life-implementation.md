@@ -86,8 +86,8 @@ The way I coded this, I am feeding the application one pattern at a fixed size. 
 
 ```clojure
 [| | |]       =>       [[  |  ]
-  [| | |]
-                          [  |  ]]
+                        [  |  ]
+                        [  |  ]]
 ```
 
 With setting a hard border, however, I am not allowing that new life to be born. Thus the pattern is not able to grow according to the rules. 
