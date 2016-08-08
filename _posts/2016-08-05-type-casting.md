@@ -20,16 +20,15 @@ Although the concept of casting is reasonably simple, the usage is complicated b
 
 When discussing casting, it can be easier to think in terms of sources and destinations. The source is the variable being cast into another type. The destination is the result.
 
----
+
 ### Casting Primitive Types
+
 
 Casting between primitive types enables you to convert the value of one type to another primitive type. This most commonly occurs with the numeric types.
 
 In many casts between primitive types, the destination can hold larger values than the source, so the value is converted easily. An example would be casting a byte into an int. Because a byte holds values from –128 to 127 and an int holds from around –2,100,000 to 2,100,000, there’s more than enough room to cast a byte into an int.
 
 Often you can automatically, use a byte or char as an int; you can use an int as a long, an int as a float, or anything as a double. This is implicit casting. In most cases, because the larger type provides more precision than the smaller, no loss of information occurs as a result. The exception is casting integers to floating-point values. Casting an int or a long to a float, or a long to a double, can cause some loss of precision.
-
-![alt text](http://www3.ntu.edu.sg/home/ehchua/programming/java/images/JavaBasics_ImplicitTypeCastingPrimitives.png "orders of implicit Type-Casting for Primitives in Java")
 
 
 #### Syntax
@@ -74,7 +73,7 @@ Objects of classes also can be cast into objects of other classes `when the sour
 Some objects might not need to be cast explicitly. In particular, because a subclass contains all the same information as its superclass, you can use an object of a subclass anywhere a superclass is expected.
 
 
-### Upcasting
+#### Upcasting
 
 
 For example, consider a method that takes two arguments, one of type Object and another of type Component in the java.awt package.
@@ -150,7 +149,7 @@ int newCount = dataCount.intValue(); // returns 7801
 ```
 
 
-### String to number
+#### String to number
 
 
 A common translation you need in programs is converting a String to a numeric type, such as an integer. When you need an int as the result, this can be done by using the parseInt() class method of the Integer class. The String to convert is the only argument sent to the method, as in the following example:
