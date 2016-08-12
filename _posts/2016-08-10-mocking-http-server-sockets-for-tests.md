@@ -56,7 +56,7 @@ The following diagram demonstrates the relationships between classes.
 
 _(I would like to preface this UML diagram by noting that I just Googled how to write a UML diagram)_
 
-![Socket UML](./images/socketUML.png)
+![Socket UML](/images/socketUML.png)
 
 Just as a quick aside, you should not name your interfaces _ISomething_, so don't do that. 
 
