@@ -56,7 +56,7 @@ The following diagram demonstrates the relationships between classes.
 
 _(I would like to preface this UML diagram by noting that I just Googled how to write a UML diagram)_
 
-![Socket UML](../images/socketUML.png)
+![Socket UML](./images/socketUML.png)
 
 Just as a quick aside, you should not name your interfaces _ISomething_, so don't do that. 
 
@@ -82,6 +82,7 @@ Here in the main class, I am using an argument parser to find the port to which 
 
 
 __Main__
+
 ```
 public class Main {
 
@@ -116,6 +117,7 @@ public interface IServerSocket {
 
 
 __HttpServerSocket__
+
 ```
 public class HttpServerSocket implements IServerSocket {
 
@@ -138,6 +140,7 @@ You can see in the second code snippet where we are relying on the Java.net Serv
 
 
 __HttpServer__
+
 ```
 public class HttpServer {
 
@@ -166,6 +169,7 @@ Take a look at how we are using the interface. I am declaring in the constructor
 
 
 __MockServerSocket__
+
 ```
 public class MockServerSocket implements IServerSocket {
   boolean acceptConnectionCalled = false;
@@ -187,6 +191,7 @@ This all brings us to the ultimate goal of testing the server.
 
 
 __HttpServerTest__
+
 ```
 public class HttpServerTest extends junit.framework.TestCase {
 
@@ -212,6 +217,7 @@ I mentioned that I was dealing with a nested interface. This means that a method
 
 
 __ISocketConnection__
+
 ```
 public interface IConnection {
   public InputStream getInputStream();
@@ -224,6 +230,7 @@ In the application, I am returning a HTTPSocketConnection
 
 
 __HttpSocketConnection__
+
 ```
 public class HttpSocketConnection implements ISocketConnection {
 
@@ -257,6 +264,7 @@ In the tests, I will opt to return a MockServerConnection.
 
 
 __MockServerConnection__
+
 ```
 public class MockSocketConnection implements ISocketConnection {
   boolean getInputStreamCalled = false;
