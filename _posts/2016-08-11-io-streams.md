@@ -64,7 +64,7 @@ I was testing these requests in the context of a request parser. In case you are
   }
 ```
 
-I am returning a HttpRequest object and I am expecting the method to be "GET", the uri route to be "/", the httpVersion to be "HTTP/1.0" and the headers and body to be empty. This test actually passed perfectly with my code as it was, so I wrote a test to check for headers.
+I am returning a HttpRequest object and I am expecting the method to be "GET", the uri route to be "/", the httpVersion to be "HTTP/1.1" and the headers and body to be empty. This test actually passed perfectly with my code as it was, so I wrote a test to check for headers.
 
 The second http string included a header "Accept: text". The content of the header is inconsequential; I just wanted to make sure that the request was being parsed into the appropriate pieces. But that was not the case, and I was getting a null pointer exception. When I figured out that my while loop where I was reading from the buffer was wrong, I made some minor adjustments. I was using `readLine()` to read from the buffer, and the error was popping up that here:
 
