@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Testing Behavior vs Implementation
-date: 2016-08-10
+date: 2016-09-09
 ---
 
 I sent my mentors a message last night, several hours past when the last dev left the building, proclaming that finally, 6 months into my apprenticeship, I was able to understand the value and meaning behind the idea of testing `behavior vs implementation`. 
