@@ -1,6 +1,6 @@
 ---
 layout: post
-title: So that's what CI if for
+title: So that's what CI is for
 date: 2016-10-03
 ---
 
