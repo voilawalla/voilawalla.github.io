@@ -1,0 +1,19 @@
+---
+layout: post
+title: Pairing Tour Day 1
+date: 2016-10-05
+---
+
+Today I had my first soft introduction to my pairing tour, working with a familiar face: my mentor Malcolm. I have paired before with him, but previously I was working towards my own personal goals, not on his daily client work. Today I got my first glimpse of what my day-to-day is going to look like once I finish my apprenticeship.
+
+I am definitely nervous going into my pairing tour, especially considering I have very little experience pairing, and I stubbornly avoid using vim. Malcolm described himself as the most "chill" of those with whom I will be pairing, which is no doubt the case. When he says "chill", my head translates that to "patient". I even expressed some concerns about going into this, all of which Malcolm was able to ease, as he always does. He suggested that a successful pairing session will be one in which I am engaged, that I will probably not be getting very far with anyone in a single day, but that showing a genuine interest in learning will take me far. 
+
+Pairing with Malcolm today eased my nerves a bit. We started off the day with me getting a general synopsis of all that he does within Studio Maintenance. I asked several questions as the day progressed because I, for shame, had neglected to inquire during the previous seven months of my apprenticeship. I also asked about how working with studio maintenance compared working towards a single product. From my observation, Malcolm gets to participate more in business decisions than I would have expected. I have expressed in the past that the business technology side is eventually where I want to land, so his close involvement and communication with the decision makers on his projects' teams certainly piques my interest.
+
+We worked pretty much on one project, LFO today, which stands for Leapfrog Online. I certainly did a lot more observing than participating, but Malcolm made sure to allow me some keyboard time. The app is a rails app, and I have not seen ruby in about a year, so it was nice to get the refresher on models and migrations. I have not seen Active Record in a while either, but I happen to really enjoy data manipulation tasks, so I was eager to get into that. 
+
+Pretty much for the middle half of the day we spent working towards a story that got nixed about an hour before we wrapped up for the day. One thing that I underestimated about the job of a crafter was how small a agile you really have to be. All day Malcolm was fielding communication and changes from three different teams, over Slack, email, project management tools, Github, and probably even more platforms that I did not tally. 
+
+A few of my questions were devoted to switching gears in that environment, going from one project to another in a day, training your focus to be laser sharp, while always answering the questions and queries of inactive attention streams. Not only was he working towards stories, but he was also making small changes presented by team members though Slack requests in the middle of stories. My head was spinning and I was only there for a few hours. I have to give him a lot of credit for being as responsive and organized as he is. That was very impressive, but it seems to make the studio services role exciting and dynamic for sure.
+
+Today, my first day of pairing, was full of insights because, honestly, I came into the day about as ignorant as you could get. I am glad that Malcolm was my introductory pair because he helped me to prepare for pairing with "strangers". Diana and Malcolm gave suggested that working on the consulting side was not dissimilar from working in studio services, but I will have to experience that to believe it. There was so much to his day and I am excited to see what tomorrow's remote pairing session will have in store.
