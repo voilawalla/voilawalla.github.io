@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pairing Tour Day 7"
-date: 2016-10-13
+date: 2016-10-26
 ---
 
 For my most recent pairing tour adventure, I met up with Stephen in Libertyville, a commute that I had been avoiding with vigor for the past eight months. Of everyone in the office, I probably have spoken to Stephen the least. The Libertyville office is a couple of hours away and I don't blame him for opting to not take the trip. 
