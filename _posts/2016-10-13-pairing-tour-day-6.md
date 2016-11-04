@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Pairing Tour Day 6"
+date: 2016-10-13
+---
+
+Pairing today was with Brian N, who works on the same client as my mentor, Zack, but on a different project team. Zack is on a team that deals more with the marketing aspects of the application, though their current focus aligns more closely with what Brian's team usually does. Brian's team works mostly with the client facing side of the application. 
+
+The client that they work with has the largest number of 8th Light crafters, occupying about 25% of our current workload. I guess that this can be considered both good an bad; good because they are helping us pay the bills, but bad because it creates a pretty heavy dependency in both directions. 
+
+One of the things I find so intriguing about this type of work, consulting, is that there is constant change and movement. I have to give a lot of credit to the ops team for making it look as smooth as they do, with only very short term bench sessions, while also hiring constantly throughout the year. I mean think about this: we started 6 new apprentices in March and April. That means they were expecting to have the work for that influx of people 6 to 9 months ahead of time. That's 2 full new clients that we were anticipating adding to the stock short term, and continuing to provide support long term.
+
+Today with Brian we worked again with CoffeeScript and Backbone. Because I had worked with Zack prior to this, I felt a little more comfortable with the landscape, so I felt like I could more readily contribute. Obviously as a crafter I will not be jumping around from project to project daily, so this is not so much something I will have to worry about. I guess when it comes down to it, these languages are mostly the same. I have yet to develop the skill of being able to determine one's value over another, but I guess that will come with experience.
+
+The problem we were trying to solve today was a validation one. We were working on one page where a number of checkboxes had to be checked in order to proceed. I want to start off by saying that the problem was not resolved by the end of the day, but I did pick up a lot of new knowledge in the process. 
+
+Brian was very deliberate about giving me the opportunity to contribute. We traded writing the tests and implementing the code, which I thought a very productive workflow. I also saw a little bit into how JavaScript's validations work. I don't have a lot of experience with JS, but I had always wondered how to accurately test interactions that the user makes with a page, and validations are part of that. Basically we wrote a validation to check that all checkboxes within a certain class were checked, and if not, the "next page" button would be disabled.
+
+As we were going through this problem, we realized that the story did not account for changes that needed to be made to the view. The view was hard coding a single check box with its description. What we needed was a collection of check boxes with their descriptions to be added to the page. Brian asked me how I would solve this and gave me the leverage to try out my way before suggesting a better way. I appreciate that he did not feel rushed and took the time to explain the issue. We had to add the elements dynamically to the page, but on the backbone side rather than on the JavaScript side.
+
+In attempting to fix this unplanned and undocumented problem, a second issue came up that was documented. Each problem was noted only as the title of the problem, and not the problem's description. The logical thing for me would have been to fix this right here by changing the structure of a single problem, instead of it being a string, making it a more robust and flexible structure. It was weird having to leave this alone and coming up with a temporary solution, rather than handling it right then and there. 
+
+I was really looking forward to working with Brian because I felt comfortable with him as a person. He was an apprentice when I was, and he was just learning as well. There are definitely benefits to working with someone close to your own skill and experience level, and there are also, of course, benefits to working with someone with way more experience and knowledge.
+
+Yesterday afternoon we did a Zagaku with Mike Jansen about the Platinum Rule. As you probably know, the Golden Rule is _treat others as you would wish to be treated yourself_. The platinum rule is _treat others as they wish to be treated_. I am reflecting on this lesson, for which we spent a few minutes filling out a personality test, and seeing where we ranked on a quadrant of openness vs guarded, and direct vs indirect. I feel like if Brian would have taken the test, he would have ranked similarly to where I ranked, and I was able to work comfortably with him for that reason. I also have to remember that there will be people who are in the opposite end as I, more direct, more social, less deliberate, with whom I will be working in my career, so I have to take everyone else's styles into consideration.
