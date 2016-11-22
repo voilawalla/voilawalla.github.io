@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pairing Tour Day 6"
+title: "Pairing Tour Day 5"
 date: 2016-10-13
 ---
 

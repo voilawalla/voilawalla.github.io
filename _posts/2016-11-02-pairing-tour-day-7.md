@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pairing Tour Day 8
+title: Pairing Tour Day 7
 date: 2016-11-02
 ---
 
